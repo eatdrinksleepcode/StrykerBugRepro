@@ -1,0 +1,23 @@
+<Project>
+
+  <PropertyGroup>
+    <Company>Repro Company</Company>
+    <Product>Repro Product</Product>
+    <Authors>Repro Author</Authors>
+    <Copyright>Copyright (c) Repro Company</Copyright>
+    <OriginalSolutionDir>$(SolutionDir)</OriginalSolutionDir>
+    <SolutionDir Condition="'$(SolutionDir)'==''">$(MSBuildThisFileDirectory)</SolutionDir>
+    <BaseIntermediateOutputPath>$(SolutionDir)obj\$(Configuration)\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)</IntermediateOutputPath>
+    <OutputPath>$(SolutionDir)bin\$(Configuration)\</OutputPath>
+    <PublishDir>$(SolutionDir)publish\$(Configuration)\</PublishDir>
+    <AppendTargetFrameworkToOutputPath>False</AppendTargetFrameworkToOutputPath>
+    <RuntimeFrameworkVersion>3.1.12</RuntimeFrameworkVersion>
+  </PropertyGroup>
+  
+  <Target Name="EchoPath" BeforeTargets="BeforeCompile">
+    <Message Text="$(ProjectName).OriginalSolutionDir = $(OriginalSolutionDir)" Importance="high"/>
+    <Message Text="$(ProjectName).SolutionDir = $(SolutionDir)" Importance="high"/>
+    <Message Text="$(ProjectName).BaseIntermediateOutputPath = $(BaseIntermediateOutputPath)" Importance="high"/>
+  </Target>
+</Project>

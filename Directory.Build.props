@@ -19,5 +19,6 @@
     <Message Text="$(ProjectName).OriginalSolutionDir = $(OriginalSolutionDir)" Importance="high"/>
     <Message Text="$(ProjectName).SolutionDir = $(SolutionDir)" Importance="high"/>
     <Message Text="$(ProjectName).BaseIntermediateOutputPath = $(BaseIntermediateOutputPath)" Importance="high"/>
+    <Message Text="$(ProjectName).IntermediateOutputPath = $(IntermediateOutputPath)" Importance="high"/>
   </Target>
 </Project>

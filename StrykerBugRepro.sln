@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrykerBugRepro", "StrykerBugRepro\StrykerBugRepro.csproj", "{5F75527B-D57C-47F3-ADCC-63A5E39D1017}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainProj", "MainProj\MainProj.csproj", "{5F75527B-D57C-47F3-ADCC-63A5E39D1017}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrykerBugReproTests", "StrykerBugReproTests\StrykerBugReproTests.csproj", "{6AFCEB0B-923F-487B-AAC9-B7F5115E5893}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProj", "TestProj\TestProj.csproj", "{6AFCEB0B-923F-487B-AAC9-B7F5115E5893}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
